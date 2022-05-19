@@ -1,0 +1,148 @@
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.landing {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.landing-container {
+    margin: 30px -15px;
+    display: flex;
+}
+
+.landing__card {
+    margin: 0 15px;
+}
+
+.landing__link-img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.landing__title {
+    margin-top: 23px;
+    margin-bottom: 40px;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+.landing__subtitle {
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.landing__span {
+    font-weight: bold;
+}
+
+
+.image {
+	float:left;
+	cursor:pointer;
+}
+
+.popup {
+	position: absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	display:none;
+	text-align:center;
+}
+
+.popup_bg {
+	background:rgba(0,0,0,0.4);
+	position:absolute;
+	z-index:1;
+	height:100%;
+	width:100%;
+}
+
+.popup-close-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.popup-close {
+    position: absolute;
+    margin-left: 690px;
+    font-size: 60px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.popup_img {
+	position: relative;
+	margin:0 auto;
+	z-index:2;
+	max-height:94%;
+	max-width:94%;
+	margin:1% 0 0 0;
+}
+
+@media (max-width: 1200px) {
+    .landing {
+        max-width: 918px;
+    }
+
+    .landing__card {
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 992px) {
+    .landing {
+        max-width: 678px;
+    }
+
+    .landing__card {
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .landing {
+        max-width: 724px;
+    }
+}
+
+@media (max-width: 767px) {
+    .landing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .landing__card {
+        max-width: 350px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .landing__card:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .landing__title {
+        margin-bottom: 0px;
+    }
+
+    .popup-close {
+        margin-left: 0;
+        right: 4%;
+    }
+}
+
+@media (max-width: 450px) {
+    .popup {
+        display: none !important;
+        cursor: default;
+    }
+}
