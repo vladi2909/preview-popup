@@ -8,16 +8,19 @@ $(document).ready(function() {
 						 "<img src="+src+" class='popup_img' />"+
 						 "</div>"); 
 		$(".popup").fadeIn(200);
+		$("body").css("overflow", "hidden");
 		$(".popup_bg").click(function(){   
 			$(".popup").fadeOut(200);
 			setTimeout(function() {
 			  $(".popup").remove();
+			  $("body").css("overflow", "auto");
 			}, 200);
 		});
 		$(".popup-close").click(function(){ 
 			$(".popup").fadeOut(200);
 			setTimeout(function() {
 			  $(".popup").remove();
+			  $("body").css("overflow", "auto");
 			}, 200);
 		});
 	});
